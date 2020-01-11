@@ -10,7 +10,7 @@ import com.cab.onlineshoppingbackends.dto.Category;
 
 public class CategoryTestCases {
 
-	private static AnnotationConfigApplicationContext context;
+	/*private static AnnotationConfigApplicationContext context;
 	private static ICategoryDAO icategoryDAO;
 	private Category categorys;
 
@@ -24,16 +24,16 @@ public class CategoryTestCases {
 
 	}
 
-	/*
-	 * @Test public void testAddCategory() {
-	 * 
-	 * categorys = new Category(); categorys.setName("Tv");
-	 * categorys.setDescription("This is for some description for Television!");
-	 * categorys.setImageURL("cat_1.png");
-	 * 
-	 * assertEquals("successfuly added category inside the table", true,
-	 * icategoryDAO.add(categorys)); }
-	 */
+	@Test
+	public void testAddCategory() {
+
+		categorys = new Category();
+		categorys.setName("Tv  23");
+		categorys.setDescription("This is for some description for Television!");
+		categorys.setImageURL("cat_1.png");
+
+		assertEquals("successfuly added category inside the table", true, icategoryDAO.add(categorys));
+	}*/
 
 	/*
 	 * @Test public void testAddCategory() {
@@ -67,42 +67,40 @@ public class CategoryTestCases {
 	 * icategoryDAO.list().size()); }
 	 */
 
-	@Test
-	public void testCurdCategory() {
-
-		categorys = new Category();
-		categorys.setName("Tv");
-		categorys.setDescription("This is for some description for Television!");
-		categorys.setImageURL("cat_1.png");
-
-		assertEquals("successfuly added category inside the table", true, icategoryDAO.add(categorys));
-
-		categorys = new Category();
-		categorys.setName("Laptop");
-		categorys.setDescription("This is for some description for Television!");
-		categorys.setImageURL("cat_2.png");
-
-		categorys = new Category();
-		categorys.setName("Mobile");
-		categorys.setDescription("This is for some description for Television!");
-		categorys.setImageURL("cat_3.png");
-
-		assertEquals("successfuly added category inside the table", true, icategoryDAO.add(categorys));
-		// Update category
-		categorys = icategoryDAO.get(1);
-		categorys.setName("Anjaiah");
-		assertEquals("successfuly added category inside the table", true, icategoryDAO.update(categorys));
-
-		// delete
-
-		categorys = icategoryDAO.get(3);
-		categorys.setName("Anjaiah");
-		assertEquals("successfuly added category inside the table", true, icategoryDAO.delete(categorys));
-
-		// fetch All
-
-		// assertEquals("successfuly added category inside the table", 1,
-		// icategoryDAO.list().size());
-	}
+	/*
+	 * @Test public void testCurdCategory() {
+	 * 
+	 * categorys = new Category(); categorys.setName("Tv");
+	 * categorys.setDescription("This is for some description for Television!");
+	 * categorys.setImageURL("cat_1.png");
+	 * 
+	 * assertEquals("successfuly added category inside the table", true,
+	 * icategoryDAO.add(categorys));
+	 * 
+	 * categorys = new Category(); categorys.setName("Laptop");
+	 * categorys.setDescription("This is for some description for Television!");
+	 * categorys.setImageURL("cat_2.png");
+	 * 
+	 * categorys = new Category(); categorys.setName("Mobile");
+	 * categorys.setDescription("This is for some description for Television!");
+	 * categorys.setImageURL("cat_3.png");
+	 * 
+	 * assertEquals("successfuly added category inside the table", true,
+	 * icategoryDAO.add(categorys)); // Update category categorys =
+	 * icategoryDAO.get(1); categorys.setName("Anjaiah");
+	 * assertEquals("successfuly added category inside the table", true,
+	 * icategoryDAO.update(categorys));
+	 * 
+	 * // delete
+	 * 
+	 * categorys = icategoryDAO.get(3); categorys.setName("Anjaiah");
+	 * assertEquals("successfuly added category inside the table", true,
+	 * icategoryDAO.delete(categorys));
+	 * 
+	 * // fetch All
+	 * 
+	 * // assertEquals("successfuly added category inside the table", 1, //
+	 * icategoryDAO.list().size()); }
+	 */
 
 }

@@ -11,6 +11,7 @@ import com.cab.onlineshoppingbackends.dao.IProductDAO;
 import com.cab.onlineshoppingbackends.dto.Category;
 import com.cab.onlineshoppingbackends.dto.Product;
 
+
 public class ProductsTestCases {
 
 	private static AnnotationConfigApplicationContext context;
@@ -31,7 +32,7 @@ public class ProductsTestCases {
 	public void testCurdCategory() {
 
 		product = new Product();
-		product.setName("Vinay ");
+		product.setName("Vinay 1");
 		product.setCode("PRDPQR123WGTX");
 		product.setBrand("Lenovo");
 		product.setDescription("This is for some description for Laptop!");

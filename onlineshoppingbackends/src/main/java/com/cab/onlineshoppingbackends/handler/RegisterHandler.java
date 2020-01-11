@@ -1,4 +1,4 @@
-package com.cab.onlineshoppingbackends.handler;
+/*package com.cab.onlineshoppingbackends.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.binding.message.MessageBuilder;
@@ -98,3 +98,4 @@ public class RegisterHandler {
 	}
 
 }
+*/
